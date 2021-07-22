@@ -4,7 +4,7 @@
     # Artifact name
     name: # optional, default is artifact
     # A file, directory or wildcard pattern that describes what to upload
-    path: /workflows/main.yml
+    path: pipeline_test/EADME.md
     
 Available Options:
   warn: Output a warning but do not fail the action
