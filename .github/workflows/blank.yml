@@ -4,8 +4,8 @@
     # Artifact name
     name: # optional, default is artifact
     # A file, directory or wildcard pattern that describes what to upload
-    path: 
-    # The desired behavior if no files are found using the provided path.
+    path: .github/workflows/main.yml
+    
 Available Options:
   warn: Output a warning but do not fail the action
   error: Fail the action with an error message
