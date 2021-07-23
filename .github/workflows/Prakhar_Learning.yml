@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
- build:
+ Prakhar_Build_1:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 2
@@ -29,7 +29,7 @@ jobs:
         run: echo $Name $FavouriteColour $FavouriteColour
  
           
- Prakhar Build 2:
+ Prakhar_Build_2:
         runs-on: ubuntu-latest
         timeout-minutes: 1
         steps:
