@@ -1,0 +1,42 @@
+name: Prakhar_Learning
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+ build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 2
+      matrix:
+       include:
+         - Name: "Prakhar Gupta"
+           FavouriteColour: "Black"
+           FavouriteBook: "You can sell."
+         - Name: "Pranav Gupta"
+           FavouriteColour: "White"
+           FavouriteBook: "Wings of Fire"
+    steps:
+      - name: Printing Details
+        env:
+          Name: ${{ matrix.Name }}
+          FavouriteColour: ${{ matrix.FavouriteColour}}          
+          FavouriteBook: ${{ matrix.FavouriteBook}}
+        run: echo $Name $FavouriteColour $FavouriteColour
+ 
+          
+ Prakhar Build 2:
+        runs-on: ubuntu-latest
+        timeout-minutes: 1
+        steps:
+          - uses: actions/checkout@v2
+          - name: Step 1 of Prakhar Build 2
+            run:  echo First half of work Build 2 executed successfully.
+          - name: Step 2 of Prakhar Build 2
+            run: |
+              echo Second half of work Build 2 executed successfully.
+              echo Build 2 Executed.
