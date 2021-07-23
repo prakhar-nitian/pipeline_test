@@ -6,6 +6,8 @@ on:
   pull_request:
     branches:
       - main
+  schedule:
+    - cron: '0 11 * * *'
 
 jobs:
  Prakhar_Build_1:
